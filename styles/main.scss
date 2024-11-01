@@ -1,0 +1,17 @@
+h1{
+    color:red
+}
+
+.presentation{
+    color:blue
+}
+
+div.parent{
+    color: white;
+    &:hover{
+        color: black;
+    }
+    .enfant{
+        color: aquamarine;
+    }
+}
