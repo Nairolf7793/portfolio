@@ -1,0 +1,29 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+    .sign{
+        font-family: "Dancing Script", serif;
+        font-size: 25px;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        &:hover {
+        animation: flashOpacity 0.5s ease-in-out; 
+        }
+
+    // Définition de l'animation flashOpacity
+        @keyframes flashOpacity {
+        10% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+        }
+    }
+
+    .nav-link{
+        display: flex;
+        gap: 50px;
+    }
+
