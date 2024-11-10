@@ -1,21 +1,12 @@
-#main-page {
-  background-color: red;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 50px;
-}
-
-.sign {
+@charset "UTF-8";
+.navbar-brand {
   font-family: "Dancing Script", serif;
-  font-size: 25px;
+  font-size: 30px;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
 }
-.sign:hover {
+.navbar-brand:hover {
   animation: flashOpacity 0.5s ease-in-out;
 }
 @keyframes flashOpacity {
@@ -35,12 +26,21 @@
   gap: 50px;
 }
 
-body {
-  font-size: 19px;
+.accueil {
+  background: linear-gradient(to bottom right, #2083BE, #F1825E);
 }
 
-* {
-  margin: 0;
+.overlay-text {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* Rendre l'élément visible lorsque la carte est survolée */
+}
+.card:hover .overlay-text {
+  opacity: 0.8;
+}
+
+body {
+  font-size: 19px;
 }
 
 a {
